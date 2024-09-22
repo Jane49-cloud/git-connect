@@ -19,3 +19,80 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+}
+
+.circle:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 30%;
+  animation-duration: 10s;
+}
+
+.circle:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  top: 80%;
+  left: 80%;
+  animation-duration: 12s;
+}
+
+.circle:nth-child(3) {
+  width: 120px;
+  height: 120px;
+  top: 40%;
+  left: 50%;
+  animation-duration: 8s;
+}
+.circle:nth-child(4) {
+  width: 90px;
+  height: 90px;
+  top: 90%;
+  left: 60%;
+  animation-duration: 8s;
+}
+
+.animate-spin {
+  animation: spin infinite linear;
+}
+
+.animate-spin.slower {
+  animation-duration: 15s;
+}
+
+.animate-spin.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(270deg, #010516, #1d1c1f);
+  background-size: 600% 600%;
+  animation: gradientMove 15s ease infinite;
+}
