@@ -1,45 +1,21 @@
 import React from "react";
 import Link from "next/link";
-import Logo from "../assets/logoGc.jpeg";
+
 import hero from "../assets/git-connect.jpg";
 import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden">
+    <div className="relative min-h-screen bg-primary overflow-hidden">
       {/* Animated Background Shapes */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <div className="circle animate-spin"></div>
-        <div className="circle animate-spin slower"></div>
+        <div className="circle animate-bounce slower"></div>
         <div className="circle animate-spin reverse"></div>
         <div className="circle animate-spin slower"></div>
       </div>
 
       {/* Main Content */}
-      <header className="relative bg-black shadow z-10 border-b border-gray-800">
-        <div className="container mx-auto px-3 py-2 flex justify-between items-center">
-          <div className="flex items-center justify-center">
-            <Image
-              className="w-12 h-full object-cover z-10 rounded-full"
-              src={Logo}
-              alt="Hero Banner"
-            />
-
-            <h1 className="text-3xl font-bold text-blue-600">GitConnect</h1>
-          </div>
-          <div>
-            <Link href="/signin" className="text-blue-600 font-semibold px-4">
-              Sign In
-            </Link>
-            <Link
-              href="/signup"
-              className="bg-blue-600 text-white font-semibold px-4 py-2 rounded"
-            >
-              Sign Up
-            </Link>
-          </div>
-        </div>
-      </header>
 
       <main className="relative container mx-auto px-4 py-12 text-center z-10">
         <h2 className="text-4xl font-bold text-gray-200 mb-4">

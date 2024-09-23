@@ -14,7 +14,7 @@ const config: Config = {
         Josefin: ["var(--font-Josefin)"],
       },
       colors: {
-        primary: "#1AC1C22",
+        primary: "#100d25",
         sec: "#3D3A50",
         action: "#580EF6",
         light: "#F7F7F7",
