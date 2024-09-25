@@ -30,6 +30,7 @@ const RegistrationForm: React.FC = () => {
 
         <h1 className="text-3xl font-bold text-blue-600">GitConnect</h1>
       </div>
+
       <Form.Item
         name="username"
         label={<span className="text-white">Username</span>}
@@ -77,6 +78,54 @@ const RegistrationForm: React.FC = () => {
         ]}
       >
         <Input.Password className="bg-gray-900 text-white border-gray-600" />
+      </Form.Item>
+
+      <Form.Item
+        name="bio"
+        label={<span className="text-white">Bio</span>}
+        rules={[{ required: true, message: "Please enter your bio" }]}
+      >
+        <Input.TextArea
+          rows={4}
+          className="bg-gray-900 text-white border-gray-600"
+        />
+      </Form.Item>
+
+      <Form.Item
+        name="education"
+        label={<span className="text-white">Education</span>}
+        rules={[{ required: true, message: "Please enter your education" }]}
+      >
+        <Input
+          placeholder="e.g., BSc in Computer Science"
+          className="bg-gray-900 text-white border-gray-600"
+        />
+      </Form.Item>
+
+      <Form.Item
+        name="experience"
+        label={<span className="text-white">Work Experience</span>}
+        rules={[
+          { required: true, message: "Please enter your work experience" },
+        ]}
+      >
+        <Input
+          placeholder="e.g., Frontend Developer at XYZ Company"
+          className="bg-gray-900 text-white border-gray-600"
+        />
+      </Form.Item>
+
+      <Form.Item
+        name="repositories"
+        label={<span className="text-white">GitHub Repositories</span>}
+        rules={[
+          { required: true, message: "Please enter your GitHub repositories" },
+        ]}
+      >
+        <Input
+          placeholder="e.g., https://github.com/janedoe/project"
+          className="bg-gray-900 text-white border-gray-600"
+        />
       </Form.Item>
 
       <Form.Item>
