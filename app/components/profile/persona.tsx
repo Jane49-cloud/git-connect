@@ -56,7 +56,7 @@ const ProfilePage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-5 py-10">
+    <div className="max-w-7xl mx-auto p-5 py-10 bg-blue-900 text-white">
       <div className="flex items-center mb-5">
         <Avatar size={64} src="https://via.placeholder.com/64" />
         <div className="ml-4">
